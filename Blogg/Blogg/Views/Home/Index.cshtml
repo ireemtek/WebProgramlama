@@ -1,8 +1,70 @@
-﻿@{
+﻿
+@{
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<!-- welcome_protomedia_start -->
+<div class="welcome_protomedia">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-6 col-md-6">
+
+                <h3>
+                    Hoş Geldiniz...
+                </h3>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- welcome_protomedia_end -->
+<!-- photographi_area_start -->
+<div class="photographi_area">
+    <div class="container">
+        <div class="row">
+
+
+            <div class="col-xl-6 col-md-6" style="padding-bottom:15px;">
+                <div class="single_photography photography_bg_1" style="background-image:url(../img/post/) !important;  background-repeat: no-repeat; background-size: 100% auto;">
+                    <div class="info">
+
+                        <div class="info_inner">
+                            <h3>
+                                <a asp-action="Details" asp-controller="Posts" asp-route-id="">
+
+                                </a>
+                            </h3>
+                            <div class="date_catagory d-flex align-items-center justify-content-between">
+                                <span> <br /><i class="fa fa-user"></i> </span>
+                                <span></span>
+                                <span class="catagory"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br />
+            }
+
+        </div>
+    </div>
+</div>
+<!-- photographi_area_end -->
+<!-- photography_slider_area_start -->
+<div class="photography_slider_area">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="photoslider_active owl-carousel">
+                    <div class="single_photography">
+                        <img src="img/photography/single-1.jpg" alt="">
+                        <div class="photo_title">
+                            <h4>item.CatName</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
