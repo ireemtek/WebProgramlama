@@ -1,1 +1,52 @@
-﻿
+﻿@using Microsoft.AspNetCore.Identity
+@using Microsoft.AspNetCore.Authorization
+@inject IAuthorizationService AuthorizationService
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+@inject RoleManager<IdentityRole> roleManager
+
+@if (SignInManager.IsSignedIn(User))
+{
+
+
+    <ul class="nav navbar-nav navbar-right">
+        <li>
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Hoşgeldin,@UserManager.GetUserName(User)!
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    @if ((await AuthorizationService.AuthorizeAsync(User, "SuperAdmin")).Succeeded || (await AuthorizationService.AuthorizeAsync(User, "Admin")).Succeeded)
+                    {
+                        <a class="dropdown-item" href="~/Admin/Home/Index">Admin Panel</a>
+                        <a class="dropdown-item" href="#">Hesabım</a>
+                        <a class="dropdown-item" href="#">Postlarım </a>
+                    }
+                    else
+                    {
+
+                        <a class="dropdown-item" href="#">Hesabım</a>
+                        <a class="dropdown-item" href="#">Postlarım </a>
+                    }
+
+
+
+
+                </div>
+            </div>
+            <a href="~/Admin/Home/Index"></a>
+        </li>
+        <li>
+            <form form method="post" asp-action="Logout" asp-controller="Admin">
+                <input asp-action="Logout" asp-controller="Account" type="submit" class="btn btn-link navbar-btn navbar-link" value="Çıkış Yap" />
+            </form>
+        </li>
+    </ul>
+
+}
+else
+{
+    <ul class="nav navbar-nav navbar-right">
+        <p><a asp-action="Login" asp-controller="Account"><i class="flaticon-user"></i>Giriş Yap</a> | <a asp-action="Register" asp-controller="Account">Kayıt Ol</a></p>
+    </ul>
+}
