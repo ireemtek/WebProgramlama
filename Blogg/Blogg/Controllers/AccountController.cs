@@ -122,6 +122,9 @@ namespace Blogg.Controllers
         {
             return View();
         }
-      
+        public IActionResult Categories()
+        {
+            return View();
+        }
     }
 }

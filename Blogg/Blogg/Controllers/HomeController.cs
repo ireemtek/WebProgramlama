@@ -10,9 +10,17 @@ namespace Blogg.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly BaseDbContext _context;
+        public HomeController(BaseDbContext context)
+        {
+            _context = context;
+        }
         public IActionResult Index()
         {
-            return View();
+            BaseViewModel viewModel = new BaseViewModel();
+            viewModel.Posts = _context.Posts;
+            return View(viewModel);
+           
         }
 
         public IActionResult About()

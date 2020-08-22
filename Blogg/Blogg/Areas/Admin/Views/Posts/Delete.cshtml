@@ -1,0 +1,76 @@
+﻿@model Post
+
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="page-header">
+    <div class="container-fluid">
+        <h2 class="h5 no-margin-bottom">Silmek istediğinize emin misiniz?</h2>
+    </div>
+</div>
+
+<div class="col-lg-12">
+    <div class="block">
+
+        <div class="block-body">
+            <section class="no-padding-top">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div>
+                                <h4>Posts</h4>
+                                <hr />
+                                <dl class="dl-horizontal">
+                                    <dt>
+                                        @Html.DisplayNameFor(model => model.Subject)
+                                    </dt>
+                                    <dd>
+                                        @Html.DisplayFor(model => model.Subject)
+                                    </dd>
+                                    <dt>
+                                        @Html.DisplayNameFor(model => model.Text)
+                                    </dt>
+                                    <dd>
+                                        @Html.DisplayFor(model => model.Text)
+                                    </dd>
+                                    <dt>
+                                        @Html.DisplayNameFor(model => model.Image)
+                                    </dt>
+                                    <dd>
+                                        @Html.DisplayFor(model => model.Image)
+                                    </dd>
+                                    <dt>
+                                        @Html.DisplayNameFor(model => model.UserName)
+                                    </dt>
+                                    <dd>
+                                        @Html.DisplayFor(model => model.UserName)
+                                    </dd>
+                                    <dt>
+                                        @Html.DisplayNameFor(model => model.CatName)
+                                    </dt>
+                                    <dd>
+                                        @Html.DisplayFor(model => model.CatName)
+                                    </dd>
+                                    <dt>
+                                        @Html.DisplayNameFor(model => model.TimeStamp)
+                                    </dt>
+                                    <dd>
+                                        @Html.DisplayFor(model => model.TimeStamp)
+                                    </dd>
+                                </dl>
+
+                                <form asp-action="Delete">
+                                    <input type="hidden" asp-for="Id" />
+                                    <input type="submit" value="Sil" class="btn btn-primary" /> |
+                                    <a asp-action="Index">Geri Dön</a>
+                                </form>
+                            </div>
+                            </div>
+</div>
+</div>
+                </section>
+</div>
+</div>
+</div>

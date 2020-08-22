@@ -1,0 +1,51 @@
+﻿@model CommentViewModel
+
+@using Microsoft.AspNetCore.Identity
+
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
+
+@if (SignInManager.IsSignedIn(User))
+{
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="comments">
+                    <div class="comments-details">
+
+                        <span class="dropdown">
+
+                        </span>
+                    </div>
+                    <div class="comment-box add-comment">
+                        <span class="commenter-pic">
+                            <img src="https://bootdey.com/img/Content/user_1.jpg" alt="" class="img-fluid">
+                        </span>
+                        <span class="commenter-name">
+                            <form asp-action="Comment" asp-controller="Posts">
+                                <input asp-for="PostId" type="hidden">
+                                <input asp-for="MainCommentId" type="hidden">
+                                <input asp-for="Message" type="text" placeholder="Bir yorum yaz">
+                                <input asp-for="UserName" type="hidden">
+
+                                <button type="submit" class="btn btn-primary">Yorum Yap</button>
+                            </form>
+                        </span>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    <center>
+        <ul class="nav navbar-nav navbar-right">
+            Yorum yapabilmek için Lütfen... 
+            <p><a asp-action="Login" asp-controller="Account">Giriş Yap</a> veya <a asp-action="Register" asp-controller="Account">Kayıt Ol</a></p>
+        </ul>
+    </center>
+}

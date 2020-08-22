@@ -33,3 +33,12 @@ C:\Users\Gizem\Desktop\İrem\Documents\GitHub\WebProgramlama\Blogg\Blogg\obj\Deb
 C:\Users\Gizem\Desktop\İrem\Documents\GitHub\WebProgramlama\Blogg\Blogg\obj\Debug\netcoreapp2.1\Blogg.dll
 C:\Users\Gizem\Desktop\İrem\Documents\GitHub\WebProgramlama\Blogg\Blogg\obj\Debug\netcoreapp2.1\Blogg.pdb
 C:\Users\Gizem\Desktop\İrem\Documents\GitHub\WebProgramlama\Blogg\Blogg\obj\Debug\netcoreapp2.1\Blogg.csproj.CopyComplete
+C:\Users\Gizem\Desktop\İrem\Documents\GitHub\WebProgramlama\Blogg\Blogg\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Home\Index.cshtml.g.cs
+C:\Users\Gizem\Desktop\İrem\Documents\GitHub\WebProgramlama\Blogg\Blogg\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Posts\Create.cshtml.g.cs
+C:\Users\Gizem\Desktop\İrem\Documents\GitHub\WebProgramlama\Blogg\Blogg\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Posts\Delete.cshtml.g.cs
+C:\Users\Gizem\Desktop\İrem\Documents\GitHub\WebProgramlama\Blogg\Blogg\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Posts\Edit.cshtml.g.cs
+C:\Users\Gizem\Desktop\İrem\Documents\GitHub\WebProgramlama\Blogg\Blogg\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Posts\Index.cshtml.g.cs
+C:\Users\Gizem\Desktop\İrem\Documents\GitHub\WebProgramlama\Blogg\Blogg\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Posts\PictureUpdate.cshtml.g.cs
+C:\Users\Gizem\Desktop\İrem\Documents\GitHub\WebProgramlama\Blogg\Blogg\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Shared\_AdminLayout.cshtml.g.cs
+C:\Users\Gizem\Desktop\İrem\Documents\GitHub\WebProgramlama\Blogg\Blogg\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\_ViewImports.cshtml.g.cs
+C:\Users\Gizem\Desktop\İrem\Documents\GitHub\WebProgramlama\Blogg\Blogg\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\_ViewStart.cshtml.g.cs

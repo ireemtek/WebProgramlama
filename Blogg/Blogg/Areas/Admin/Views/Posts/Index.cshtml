@@ -1,0 +1,87 @@
+﻿@model IEnumerable<Post>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="page-header">
+    <div class="container-fluid">
+        <h2 class="h5 no-margin-bottom">Postlarımıza Hoş Geldiniz</h2>
+    </div>
+</div>
+
+<div class="col-lg-12">
+    <div class="block">
+
+        <div class="block-body">
+            <section class="no-padding-top">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <div class="block">
+
+                            </div>
+                        </div>
+
+                        <p>
+                            <a asp-action="Create">Yeni Post +</a>
+                        </p>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.Subject)
+                                    </th>
+
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.Image)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.UserName)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.CatName)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.TimeStamp)
+                                    </th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Subject)
+                                        </td>
+
+                                        <td>
+                                            <img width="50" height="50" src="~/img/post/@item.Image" />
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.UserName)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.CatName)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.TimeStamp)
+                                        </td>
+                                        <td>
+                                            <a asp-action="Edit" asp-route-id="@item.Id">Düzenle</a> |
+                                            <a href="~/Posts/Details/@item.Id" >Görüntüle</a> |
+                                            <a asp-action="Delete" asp-route-id="@item.Id">Sil</a>
+                                        
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                        </div>
+</div>
+                </section>
+</div>
+</div>
+</div>

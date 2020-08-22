@@ -67,7 +67,7 @@ using Blogg.Models;
             WriteLiteral("\r\n<!DOCTYPE html>\r\n\r\n<html>\r\n");
             EndContext();
             BeginContext(58, 406, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9786ace53e314d6485b90e47b6a92716", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fb3f87a56b3d4f7db85c5b589b89c399", async() => {
                 BeginContext(64, 393, true);
                 WriteLiteral(@"
     <meta name=""viewport"" content=""width=device-width"" />
@@ -93,7 +93,7 @@ using Blogg.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(466, 639, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "155dce4ee08d4a51be2c492b1bfc8e03", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d1161504214b40eda4670aa96dbd5481", async() => {
                 BeginContext(472, 461, true);
                 WriteLiteral(@"
    
@@ -107,7 +107,7 @@ using Blogg.Models;
                     ");
                 EndContext();
                 BeginContext(933, 89, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "21a6c6f3285e4f86965d95149c067352", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ca2d9bc64ef743908776db64f021d868", async() => {
                     BeginContext(998, 20, true);
                     WriteLiteral("Anasayfaya geri dön.");
                     EndContext();
