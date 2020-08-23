@@ -23,6 +23,16 @@ using Blogg.Models;
 
 #line default
 #line hidden
+#line 3 "C:\Users\Gizem\Desktop\İrem\Documents\GitHub\WebProgramlama\Blogg\Blogg\Views\_ViewImports.cshtml"
+using Blogg.ViewModels;
+
+#line default
+#line hidden
+#line 4 "C:\Users\Gizem\Desktop\İrem\Documents\GitHub\WebProgramlama\Blogg\Blogg\Views\_ViewImports.cshtml"
+using Microsoft.AspNetCore.Mvc.Localization;
+
+#line default
+#line hidden
 #line 1 "C:\Users\Gizem\Desktop\İrem\Documents\GitHub\WebProgramlama\Blogg\Blogg\Views\Shared\_LoginPartial.cshtml"
 using Microsoft.AspNetCore.Identity;
 
@@ -34,7 +44,7 @@ using Microsoft.AspNetCore.Authorization;
 #line default
 #line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"565b3cd5817040b2bc1c74b176d1400adbb4fe65", @"/Views/Shared/_LoginPartial.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"76b100fef085d2c8b883a4b044f4ccac34d640ce", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"b445deac82803ae76395b2e4a0bac0137963777a", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared__LoginPartial : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("dropdown-item"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -112,7 +122,7 @@ using Microsoft.AspNetCore.Authorization;
             WriteLiteral("                        ");
             EndContext();
             BeginContext(989, 66, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2445b6de210d478a804d7c1fe50d7e79", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1a527a8757834891990541897235a9bf", async() => {
                 BeginContext(1040, 11, true);
                 WriteLiteral("Admin Panel");
                 EndContext();
@@ -153,7 +163,7 @@ using Microsoft.AspNetCore.Authorization;
             WriteLiteral("\r\n\r\n\r\n\r\n                </div>\r\n            </div>\r\n            ");
             EndContext();
             BeginContext(1508, 33, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "06ff817de3a544ce8ba37f939c743634", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "81a455aa33734594bf983b785eef5924", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -171,12 +181,12 @@ using Microsoft.AspNetCore.Authorization;
             WriteLiteral("\r\n        </li>\r\n        <li>\r\n            ");
             EndContext();
             BeginContext(1584, 237, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fc2559886fcf4c8bb5ad5f7c5e6fc0c3", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1d9ba181a03d426fb02059129df931e4", async() => {
                 BeginContext(1652, 18, true);
                 WriteLiteral("\r\n                ");
                 EndContext();
                 BeginContext(1670, 130, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "238a9f9043144eed806b1fc8db41f9c8", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "9a1acd54454145da82d32c69bdbc8762", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_FormActionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.FormActionTagHelper>();
@@ -237,7 +247,7 @@ else
             WriteLiteral("    <ul class=\"nav navbar-nav navbar-right\">\r\n        <p>");
             EndContext();
             BeginContext(1920, 89, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "030f9dae3af24e38ab08dbfc51583d43", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "436c8ea6f4584fbca7d200fdc8c166c1", async() => {
                 BeginContext(1967, 38, true);
                 WriteLiteral("<i class=\"flaticon-user\"></i>Giriş Yap");
                 EndContext();
@@ -261,7 +271,7 @@ else
             WriteLiteral(" | ");
             EndContext();
             BeginContext(2012, 62, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fa7c3cbcf3e8455f81fa0b6b61f53b65", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5eaa32b23131474cab1877e2c030f036", async() => {
                 BeginContext(2062, 8, true);
                 WriteLiteral("Kayıt Ol");
                 EndContext();
@@ -299,6 +309,8 @@ else
         public SignInManager<ApplicationUser> SignInManager { get; private set; }
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
         public IAuthorizationService AuthorizationService { get; private set; }
+        [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
+        public IViewLocalizer Localizer { get; private set; }
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
         public global::Microsoft.AspNetCore.Mvc.ViewFeatures.IModelExpressionProvider ModelExpressionProvider { get; private set; }
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]

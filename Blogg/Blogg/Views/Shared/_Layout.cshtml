@@ -92,11 +92,18 @@
                             <div class="main-menu  d-none d-lg-block">
                                 <nav>
                                     <ul id="navigation">
-                                        <li><a class="active" asp-action="Index" asp-controller="Home">Anasayfa</a></li>
-                                        
-                                        <li><a asp-action="Index">Hakkımızda</a></li>
-                                        <li><a asp-action="Index">İletişim</a></li>
-                                    </ul>
+                                        <li><a class="active" asp-action="Index" asp-controller="Home">@Localizer["Home"]</a></li>
+
+                                        <li><a asp-action="Index">@Localizer["About"]</a></li>
+                                        <li><a asp-action="Index">@Localizer["Contact"]</a></li>
+                                        <li>
+                                            <a href="#">@Localizer["Language"] <i class="ti-angle-down"></i></a>
+                                            <ul class="submenu">
+                                                <li><a href="?culture=en-US"> English</a></li>
+                                                <li><a href="?culture=tr-TR"> Türkçe</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>                                
                                 </nav>
                             </div>
                         </div>

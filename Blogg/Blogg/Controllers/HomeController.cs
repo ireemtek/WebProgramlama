@@ -5,15 +5,18 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Blogg.Models;
+using Microsoft.Extensions.Localization;
 
 namespace Blogg.Controllers
 {
     public class HomeController : Controller
     {
         private readonly BaseDbContext _context;
-        public HomeController(BaseDbContext context)
+        private readonly IStringLocalizer<HomeController> _localizer;
+        public HomeController(BaseDbContext context, IStringLocalizer<HomeController> localizer)
         {
             _context = context;
+            _localizer = localizer;
         }
         public IActionResult Index()
         {
